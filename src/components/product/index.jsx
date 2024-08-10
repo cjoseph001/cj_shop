@@ -8,7 +8,7 @@ export default function Product({ item }) {
 
   return (
     <div className="product-item-container">
-      <Link to={`/product-page/${item.id}`}>
+      <Link className="item-link" to={`/product-page/${item.id}`}>
         <div className="item-title">{item?.title}</div>
         <img className="item-image" src={item?.image} />
         <div className="item-price">${item?.price}</div>

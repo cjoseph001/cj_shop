@@ -11,12 +11,16 @@ body {
   padding: 0;
 }
 
+/* .element {
+  padding-top: 6rem;
+} */
+
 .header {
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem;
+  /* position: fixed; */
 }
 
 .header-title {
@@ -56,6 +60,10 @@ body {
   width: 10rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.item-image:hover {
+  transform: scale(1.15);
 }
 .item-remove {
   border-radius: 50px;
@@ -109,7 +117,7 @@ body {
   margin-top: 0.75rem;
 }
 .item-subtotal {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 .change input {
   width: 9rem;
@@ -176,6 +184,7 @@ body {
   border: 0.85px solid;
   border-radius: 10px;
   justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .products {
@@ -202,6 +211,7 @@ body {
 .home-button,
 .close-button {
   padding: 0.5rem;
+  margin-bottom: 0.75rem;
   border: none;
   border-radius: 5px;
   background-color: #d2deec;
@@ -273,4 +283,14 @@ body {
 .no-product {
   text-align: center;
   margin-top: 2rem;
+}
+
+.item-link {
+  text-decoration: none;
+  color: rgb(27, 19, 77);
+}
+
+.item-desc {
+  font-size: 1.15rem;
+  padding: 1.5rem 2.5rem 1rem 2.5rem;
 }
