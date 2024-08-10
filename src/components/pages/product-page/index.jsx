@@ -15,7 +15,7 @@ export default function ProductPage() {
   return (
     <div
       className="product-item-container"
-      style={{ width: "80%", margin: "0 auto", marginTop: "2rem" }}
+      style={{ width: "85%", margin: "0 auto", marginTop: "2rem" }}
     >
       <div className="item-title">{productItem?.title}</div>
       <img className="item-image" src={productItem?.image} />

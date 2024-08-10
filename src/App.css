@@ -11,16 +11,11 @@ body {
   padding: 0;
 }
 
-/* .element {
-  padding-top: 6rem;
-} */
-
 .header {
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
 }
 
 .header-title {
