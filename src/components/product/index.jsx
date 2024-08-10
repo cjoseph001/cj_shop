@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../global-state";
+import { Link } from "react-router-dom";
 
 export default function Product({ item }) {
   const { cart, addItemToCart, reduceItemFromCart } = useContext(GlobalContext);
@@ -7,9 +8,11 @@ export default function Product({ item }) {
 
   return (
     <div className="product-item-container">
-      <div className="item-title">{item?.title}</div>
-      <img className="item-image" src={item?.image} />
-      <div className="item-price">${item?.price}</div>
+      <Link to={`/product-page/${item.id}`}>
+        <div className="item-title">{item?.title}</div>
+        <img className="item-image" src={item?.image} />
+        <div className="item-price">${item?.price}</div>
+      </Link>
 
       <div className="button-group1">
         <button className="button1" onClick={() => addItemToCart(item)}>
