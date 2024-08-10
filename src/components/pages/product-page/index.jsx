@@ -7,19 +7,17 @@ export default function ProductPage() {
   const navigate = useNavigate();
   const { data, addItemToCart, reduceItemFromCart, cart } =
     useContext(GlobalContext);
-  const productItem = data.find((item) => item.id === Number(id));
-  const cartId = cart.findIndex((item) => item.id === Number(id));
+
+  const productItem = data.find((item) => item.id === id);
+  const cartId = cart.findIndex((item) => item.id === id);
 
   return (
-    <div
-      className="product-item-container"
-      style={{ width: "80%", margin: "0 auto", marginTop: "2rem" }}
-    >
+    <div className="product-item-container">
       <div className="item-title">{productItem?.title}</div>
       <img className="item-image" src={productItem?.image} />
       <div className="item-price">${productItem?.price}</div>
 
-      <div className="item-desc">{productItem?.description}</div>
+      <div className="item-price">${productItem?.description}</div>
 
       <div className="button-group1">
         <button className="button1" onClick={() => addItemToCart(productItem)}>
@@ -34,9 +32,9 @@ export default function ProductPage() {
         </button>
       </div>
 
-      {cart[cartId]?.quantity > 0 ? (
+      {cart[index]?.quantity > 0 ? (
         <div className="item-subtotal">
-          Subtotal : ${(cart[cartId]?.quantity * productItem.price).toFixed(2)}
+          ${(cart[cartId]?.quantity * productItem.price).toFixed(2)}
         </div>
       ) : null}
 
