@@ -48,7 +48,7 @@ export default function GlobalState({ children }) {
         (cartItem) => cartItem.id === item.id
       );
 
-      if (currentIndex > -1) {
+      if (currentIndex !== -1) {
         const updatedCart = prevCart.map((cartItem, index) =>
           index === currentIndex
             ? { ...cartItem, quantity: cartItem.quantity + 1 }

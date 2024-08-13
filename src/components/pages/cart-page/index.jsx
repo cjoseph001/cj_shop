@@ -32,6 +32,12 @@ export default function CartPage() {
           >
             Home
           </button>
+          <button
+            className="home-button"
+            onClick={() => navigate("/checkout-page")}
+          >
+            Checkout
+          </button>
         </div>
       ) : (
         <div className="no-items">
