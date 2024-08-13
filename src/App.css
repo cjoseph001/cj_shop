@@ -315,3 +315,67 @@ body {
     gap: 2rem;
   }
 }
+
+.checkout-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-name,
+.form-email,
+.form-address {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-name,
+.input-email,
+.input-address {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-name:focus,
+.input-email:focus,
+.input-address:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-error {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #146ecd;
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #8bb5e2;
+}
+
+.form-message {
+  display: block;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
