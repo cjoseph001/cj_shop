@@ -8,7 +8,6 @@ export default function ProductPage() {
   const { data, addItemToCart, reduceItemFromCart, cart } =
     useContext(GlobalContext);
 
-  //convert param id to number
   const productItem = data.find((item) => item.id === Number(id));
   const cartId = cart.findIndex((item) => item.id === Number(id));
 
