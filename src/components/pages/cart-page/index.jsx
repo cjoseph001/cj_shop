@@ -30,7 +30,7 @@ export default function CartPage() {
               navigate("/");
             }}
           >
-            Home
+            Add More Items
           </button>
           <button
             className="home-button"
