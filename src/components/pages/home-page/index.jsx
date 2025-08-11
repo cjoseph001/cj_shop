@@ -46,8 +46,8 @@ export default function HomePage() {
               Search
             </button>
           </div>
-          <p style={{ marginBottom: "1.5rem" }}>
-            Data is fetched from <i>https://fakestoreapi.com/products</i>
+          <p style={{ marginBottom: "1.25rem" }}>
+            Data Source : <i>https://fakestoreapi.com/products</i>
           </p>
 
           {filteredData && filteredData.length > 0 ? (
