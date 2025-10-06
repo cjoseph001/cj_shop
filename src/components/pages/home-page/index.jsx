@@ -46,7 +46,7 @@ export default function HomePage() {
               Search
             </button>
           </div>
-          <p style={{ marginBottom: "1.25rem" }}>
+          <p style={{ marginBottom: "1.25rem", fontSize: "14px" }}>
             Data Source : <i>https://fakestoreapi.com/products</i>
           </p>
 

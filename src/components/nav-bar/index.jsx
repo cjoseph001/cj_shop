@@ -17,7 +17,7 @@ export default function Navbar() {
           <Link className="nav" to="/cart-page">
             <li>
               {" "}
-              Cart
+              My Cart
               {calculateTotalQuantity(cart) > 0
                 ? ` (${calculateTotalQuantity(cart)}) : $${calculateTotalPrice(
                     cart
